@@ -1,0 +1,63 @@
+<!Doctype html>
+  <html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+     <script src="index.js"></script>
+  </head>
+  <body>
+      <div class="all">
+          
+    <div class="container-btn">
+        <span>Calculator</span>
+        <input class="display" type="text" id="display" placeholder="0" disabled>
+    <div class="buttons">
+      <button style="background-color:red;" id="allclear" onclick="allClear()">
+          AC
+      </button>
+      <button id="(" onclick="input('(')">(</button>
+      <button id=")" onclick="input(')')">)</button>
+      <button id="clear" onclick="del()" >del</button>
+      
+      <button id="7" onclick="input('7')">
+       7
+      </button>
+      <button id="8" onclick="input(8)">
+       8
+      </button>
+       <button id="9" onclick="input(9)">
+       9
+      </button>
+      <button id="/" onclick="specialInput('/')">
+          ÷
+      </button>
+     <button id="4" onclick="input(4)">4</button>
+     <button id="5" onclick="input(5)">5</button>
+      <button id="6" onclick="input(6)">
+       6
+      </button>
+      <button id="x" onclick="specialInput('*')">
+       ×
+      </button>
+       <button id="1" onclick="input(1)">
+       1
+      </button>
+      <button id="2" onclick="input(2)">
+          2
+      </button>
+     <button id="3" onclick="input(3)">3</button>
+     <button id="-" onclick="specialInput('-')">-</button>
+     <button id="." onclick="specialInput('.')">
+       .
+      </button>
+      <button id="0" onclick="input(0)">
+          0
+      </button>
+     <button id="+" onclick="specialInput('+')">+</button>
+         <button id="=" onclick="calculate()" style="background-color:greenyellow;">=</button>
+
+    </div>
+    </div>
+    </div>
+  </body>
+</html>
